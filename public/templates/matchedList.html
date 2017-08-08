@@ -1,3 +1,6 @@
-<div>
-
+<div ng-controller="matchedListCtrl">
+  
+  <ul class="list-group">
+   <li class="list-group-item" ng-repeat="profile in profilesList.data track by $index" ng-click="viewProfile(profile)">{{profile.firstName}}</li>
+  </ul>    
 </div>
